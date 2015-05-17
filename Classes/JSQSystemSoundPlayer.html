@@ -55,11 +55,7 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/playAlertSoundWithFilename:fileExtension:">&nbsp;&nbsp;&nbsp;&nbsp;- playAlertSoundWithFilename:fileExtension:</option>
-	
 	<option value="//api/name/playAlertSoundWithFilename:fileExtension:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- playAlertSoundWithFilename:fileExtension:completion:</option>
-	
-	<option value="//api/name/playSoundWithFilename:fileExtension:">&nbsp;&nbsp;&nbsp;&nbsp;- playSoundWithFilename:fileExtension:</option>
 	
 	<option value="//api/name/playSoundWithFilename:fileExtension:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- playSoundWithFilename:fileExtension:completion:</option>
 	
@@ -115,11 +111,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playAlertSoundWithFilename:fileExtension:">playAlertSoundWithFilename:fileExtension:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playAlertSoundWithFilename:fileExtension:completion:">playAlertSoundWithFilename:fileExtension:completion:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playSoundWithFilename:fileExtension:">playSoundWithFilename:fileExtension:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playSoundWithFilename:fileExtension:completion:">playSoundWithFilename:fileExtension:completion:</a></span></li>
 	
@@ -214,19 +206,7 @@ receiving the <code>UIApplicationDidReceiveMemoryWarningNotificati</code>on<code
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/playSoundWithFilename:fileExtension:">&ndash;&nbsp;playSoundWithFilename:fileExtension:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/playSoundWithFilename:fileExtension:completion:">&ndash;&nbsp;playSoundWithFilename:fileExtension:completion:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/playAlertSoundWithFilename:fileExtension:">&ndash;&nbsp;playAlertSoundWithFilename:fileExtension:</a></code>
 	</span>
 	
 	
@@ -424,68 +404,6 @@ If disabled, it will not play <a href="#//api/name/sounds">sounds</a>.</p>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/playAlertSoundWithFilename:fileExtension:" title="playAlertSoundWithFilename:fileExtension:"></a>
-	<h3 class="subsubtitle method-title">playAlertSoundWithFilename:fileExtension:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Plays a system sound object <em>as an alert</em> corresponding to an audio file with the given filename and extensi<a href="#//api/name/on">on</a>.
-The system sound player will lazily initialize and load the file before playing it, and then cache its corresponding <code>SystemSoundID</code>.
-If this file has previously been played, it will be loaded from cache and played immediately.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)playAlertSoundWithFilename:(NSString *)<em>filename</em> fileExtension:(NSString *)<em>fileExtension</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>filename</em></dt>
-			<dd><p>A string containing the base name of the audio file to play.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>fileExtension</em></dt>
-			<dd><p>A string containing the extensi<a href="#//api/name/on">on</a> of the audio file to play.
-This parameter must be one of <code>kJSQSystemSoundTypeCAF</code>, <code>kJSQSystemSoundTypeAIF</code>, <code>kJSQSystemSoundTypeAIFF</code>, or <code>kJSQSystemSoundTypeWAV</code>.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Plays a system sound object <em>as an alert</em> corresponding to an audio file with the given filename and extensi<a href="#//api/name/on">on</a>.
-The system sound player will lazily initialize and load the file before playing it, and then cache its corresponding <code>SystemSoundID</code>.
-If this file has previously been played, it will be loaded from cache and played immediately.</p><div class="warning"><p><strong>Warning:</strong> If the system sound object cannot be created, this method does nothing.</p></div><div class="warning"><p><strong>Warning:</strong> This method performs the same functions as <code>playSoundWithName: extension:</code>, with the excepi<a href="#//api/name/on">on</a> that,
-depending <a href="#//api/name/on">on</a> the particular iOS device, this method may invoke vibrati<a href="#//api/name/on">on</a>.</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JSQSystemSoundPlayer.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/playAlertSoundWithFilename:fileExtension:completion:" title="playAlertSoundWithFilename:fileExtension:completion:"></a>
 	<h3 class="subsubtitle method-title">playAlertSoundWithFilename:fileExtension:completion:</h3>
 	
@@ -521,7 +439,7 @@ This parameter must be one of <code>kJSQSystemSoundTypeCAF</code>, <code>kJSQSys
 		<dl class="argument-def parameter-def">
 			<dt><em>completionBlock</em></dt>
 			<dd><p>A block called after the sound has stopped playing.
-This block is retained by <code>JSQSystemSoundPlayer</code>, temporarily cached, and released after its executi<a href="#//api/name/on">on</a>.</p></dd>
+This block is retained by <code>JSQSystemSoundPlayer</code>, temporarily cached, and released after its executi<a href="#//api/name/on">on</a>. This value may be <code>nil</code>.</p></dd>
 		</dl>
 		
 	</div>
@@ -539,67 +457,6 @@ and and excutes completionBlock when the sound has stopped playing.
 The system sound player will lazily initialize and load the file before playing it, and then cache its corresponding <code>SystemSoundID</code>.
 If this file has previously been played, it will be loaded from cache and played immediately.</p><div class="warning"><p><strong>Warning:</strong> If the system sound object cannot be created, this method does nothing.</p></div><div class="warning"><p><strong>Warning:</strong> This method performs the same functions as <code>playSoundWithName: extension: completion:</code>,
 with the excepi<a href="#//api/name/on">on</a> that, depending <a href="#//api/name/on">on</a> the particular iOS device, this method may invoke vibrati<a href="#//api/name/on">on</a>.</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JSQSystemSoundPlayer.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/playSoundWithFilename:fileExtension:" title="playSoundWithFilename:fileExtension:"></a>
-	<h3 class="subsubtitle method-title">playSoundWithFilename:fileExtension:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Plays a system sound object corresponding to an audio file with the given filename and extensi<a href="#//api/name/on">on</a>.
-The system sound player will lazily initialize and load the file before playing it, and then cache its corresponding <code>SystemSoundID</code>.
-If this file has previously been played, it will be loaded from cache and played immediately.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)playSoundWithFilename:(NSString *)<em>filename</em> fileExtension:(NSString *)<em>fileExtension</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>filename</em></dt>
-			<dd><p>A string containing the base name of the audio file to play.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>fileExtension</em></dt>
-			<dd><p>A string containing the extensi<a href="#//api/name/on">on</a> of the audio file to play.
-This parameter must be one of <code>kJSQSystemSoundTypeCAF</code>, <code>kJSQSystemSoundTypeAIF</code>, <code>kJSQSystemSoundTypeAIFF</code>, or <code>kJSQSystemSoundTypeWAV</code>.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Plays a system sound object corresponding to an audio file with the given filename and extensi<a href="#//api/name/on">on</a>.
-The system sound player will lazily initialize and load the file before playing it, and then cache its corresponding <code>SystemSoundID</code>.
-If this file has previously been played, it will be loaded from cache and played immediately.</p><div class="warning"><p><strong>Warning:</strong> If the system sound object cannot be created, this method does nothing.</p></div>
 	</div>
 	
 	
@@ -652,7 +509,7 @@ This parameter must be one of <code>kJSQSystemSoundTypeCAF</code>, <code>kJSQSys
 		<dl class="argument-def parameter-def">
 			<dt><em>completionBlock</em></dt>
 			<dd><p>A block called after the sound has stopped playing.
-This block is retained by <code>JSQSystemSoundPlayer</code>, temporarily cached, and released after its executi<a href="#//api/name/on">on</a>.</p></dd>
+This block is retained by <code>JSQSystemSoundPlayer</code>, temporarily cached, and released after its executi<a href="#//api/name/on">on</a>. This value may be <code>nil</code>.</p></dd>
 		</dl>
 		
 	</div>
@@ -952,7 +809,7 @@ This setting is persisted across applicati<a href="#//api/name/on">on</a> launch
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015 Jesse Squires. All rights reserved. (Last updated: 2015-05-03)</span><br />
+						<p><span class="copyright">&copy; 2015 Jesse Squires. All rights reserved. (Last updated: 2015-05-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
