@@ -1,0 +1,4 @@
+[submodule "JSQSystemSoundPlayer"]
+	path = JSQSystemSoundPlayer
+	url = https://github.com/jessesquires/JSQSystemSoundPlayer.git
+	branch = develop
