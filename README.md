@@ -15,3 +15,21 @@ $ git checkout gh-pages
 $ git submodule init
 $ git submodule update
 ````
+
+## Generate
+
+````bash
+$ ./build_docs.sh
+````
+
+## Preview
+
+````bash
+$ open index.html -a Safari
+````
+
+## Publish
+
+````bash
+$ ./publish_docs.sh
+````
