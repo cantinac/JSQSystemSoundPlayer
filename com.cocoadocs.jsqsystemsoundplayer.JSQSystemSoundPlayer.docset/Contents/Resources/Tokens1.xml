@@ -102,8 +102,37 @@ The default value is the main bundle. This value must not be nil.</Abstract>
 			
 			<Declaration>+ (JSQSystemSoundPlayer *)sharedPlayer</Declaration>
 			
-			<ReturnValue><Abstract type="html">An initialized JSQSystemSoundPlayer object if successful, nil otherwise.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">A shared instance ofJSQSystemSoundPlayer.</Abstract></ReturnValue>
 			<Anchor>//api/name/sharedPlayer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSQSystemSoundPlayer/initWithBundle:</TokenIdentifier>
+			<Abstract type="html">Returns a new JSQSystemSoundPlayer instance with the specified bundle.</Abstract>
+			<DeclaredIn>JSQSystemSoundPlayer.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithBundle:(NSBundle *)bundle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>bundle</Name>
+					<Abstract type="html">The bundle in which the sound player uses to search for sound file resources.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized JSQSystemSoundPlayer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithBundle:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSQSystemSoundPlayer/init</TokenIdentifier>
+			<Abstract type="html">Returns a new JSQSystemSoundPlayer instance using the main bundle.</Abstract>
+			<DeclaredIn>JSQSystemSoundPlayer.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">An initialized JSQSystemSoundPlayer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
