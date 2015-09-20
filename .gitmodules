@@ -2,3 +2,7 @@
 	path = JSQSystemSoundPlayer
 	url = https://github.com/jessesquires/JSQSystemSoundPlayer.git
 	branch = develop
+[submodule "cocoadocs.org"]
+	path = cocoadocs.org
+	url = https://github.com/CocoaPods/cocoadocs.org.git
+	branch = master
