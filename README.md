@@ -33,9 +33,3 @@ $ ./build_docs.sh
 ````bash
 $ open index.html -a Safari
 ````
-
-## Publish
-
-````bash
-$ ./publish_docs.sh
-````
